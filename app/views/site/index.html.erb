@@ -28,12 +28,12 @@
 
       <div class="starter-template">
         <h1>Silicon Valley Tech House</h1>
-        <p class="lead">A home for motivated techies. University Ave Palo Alto. <br/>8-10 people. $600-1000 per month.<br/> <br/> <br/>
+        <p class="lead">A home for motivated techies. University Ave Palo Alto. <br/>8-12 people. $600-1000 per month.<br/> <br/> <br/>
         
          
         </p>
 
-        <div class="call-to-action">Apply Now</div>
+        <a class="call-to-action" href="#buffer">Apply Now</a><br/>
         <a href="mailto:chadswenson@gmail.com" class="learn">Want more info? Contact Us.</a>
       </div>
 
@@ -47,7 +47,7 @@
     <%= flash[:notice] %>
   </div>
 <% end %>
-  <div class="row buffer">
+  <div class="row buffer" id="apply">
     <%= form_for @applicant, role: "form" do |f|%>
     <% unless @applicant.errors.count == 0   %>
         <div class="alert alert-danger">
